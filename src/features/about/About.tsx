@@ -8,7 +8,7 @@ interface Props {
 export default function About({ about }: Props) {
   return (
     <div
-      className="bg-blue-100 rounded-lg shadow-md p-8"
+      className="bg-blue-100 rounded-lg shadow-md p-8 prose-lg"
       dangerouslySetInnerHTML={sanitzedHTML(about.data[0].content.page_content)}
     />
   );
