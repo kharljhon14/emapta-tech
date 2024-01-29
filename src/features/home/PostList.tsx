@@ -23,8 +23,8 @@ export default function PostList() {
   return (
     <ul className="space-y-6 m-12">
       {data &&
-        data.map((post) => (
-          <li key={post.title}>
+        data.map((post, idx) => (
+          <li key={idx}>
             <Post post={post} />
           </li>
         ))}
